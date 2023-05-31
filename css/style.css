@@ -216,7 +216,6 @@ nav .nav-ber .darklight-x .dark_light {
     height: calc(100vh - 80px);
     width: 100%;
     /* margin-bottom: 700px; */
-    background:red;
         position: relative;
 
 }
@@ -225,9 +224,7 @@ nav .nav-ber .darklight-x .dark_light {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 30px;
-    /* padding-top: 10px; */
-    /* margin-top: 40px; */
-
+   padding:70px 0;
 }
 
 .header-main .haeder-info h1 {
@@ -263,7 +260,7 @@ nav .nav-ber .darklight-x .dark_light {
     text-transform: uppercase;
     background: #4a4a4b;
     color: #fff;
-    /* bottom:10px; */
+    top:30px;
     border: none;
     text-decoration: none;
     font-size: 15px;
@@ -309,8 +306,8 @@ width: 200px */
 
 /* about */
 .about {
-    /* margin-top: 200px; */
-    /* overflow: hidden; */
+    margin-top: 150px;
+
 }
 
 .about .about-main {
@@ -332,7 +329,6 @@ width: 200px */
 .about .about-main img {
     height: 260px;
     width: 260px;
-    /* border-radius: 50%; */
 }
 
 .about .about-main p {
@@ -381,7 +377,6 @@ object-fit: cover;
 
 /* end about*/
 
-
 .services {
     margin-bottom: 60px;
 }
@@ -406,8 +401,6 @@ object-fit: cover;
     text-align: center;
     color: var(--side-nav);
     margin-bottom: 20px;
-
-
 }
 
 .services p {
@@ -423,9 +416,7 @@ object-fit: cover;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-
 }
-
 
 .services .services_main .services_main_component {
     border-radius: 10px;
@@ -473,7 +464,7 @@ object-fit: cover;
 
 .services_main_component .services_component_title h3 {
     color: var(--text-color);
-    font-size: 18px;
+    font-size: 23px;
     text-transform:capitalize;
     font-weight: 600px;
 }
@@ -481,7 +472,7 @@ object-fit: cover;
 .services_main_component .services_component_title p {
     color: var(--text-color);
     font-weight: 400;
-    font-size: 15px;
+    font-size: 19px;
     line-height: 1.1;
 }
 
