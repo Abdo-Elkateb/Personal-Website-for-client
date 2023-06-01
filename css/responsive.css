@@ -141,6 +141,26 @@
 
 /* 790px */
 @media screen and (max-width:790px) {
+        .ber_logo   {
+     display: inline;
+position: absolute;
+line-height: 80px;
+left: 38px;
+top: -10px;
+}
+
+    .ber_logo img  {
+    margin-top: 35px;
+}
+.ber_logo a  {
+color: #fff;
+position: absolute;
+line-height: 80px;
+text-decoration: none;
+top: 7px;
+left: 48px;
+font-size: 18px;
+}
     .header-main {
         display: grid;
         grid-template-columns: 1fr;

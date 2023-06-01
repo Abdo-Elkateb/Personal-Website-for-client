@@ -126,7 +126,23 @@ nav .nav-ber .logo {
 
 
 }
-
+.ber_logo {
+    display: inline;
+    position: relative;
+    line-height: 80px;
+}
+.ber_logo img  {
+    margin-top: 35px;
+}
+.ber_logo a  {
+color: #fff;
+position: absolute;
+line-height: 80px;
+text-decoration: none;
+top: 7px;
+left: 48px;
+font-size: 18px;
+}
 nav .nav-ber .menu .nav-links {
     display: flex;
     align-items: center;
@@ -244,14 +260,11 @@ nav .nav-ber .darklight-x .dark_light {
 
 
 .header-main  p {
-    font-size: 19px;
-    font-weight: 500;
-    color: #4a4a4b;
-    line-height: 1.6;
-    margin-bottom: 0px !important;
-    margin-top: 5px !important;
-    padding-bottom: 10px;
-    /* text-align: start; */
+font-size: 16px;
+font-weight: 300;
+color: #4a4a4b;
+max-width: 97%;
+line-height: 2;
 }
 
 .header-main a {
@@ -350,15 +363,26 @@ width: 200px */
     position: relative;
 }
 
-.about .about-main-skils .about_experience img {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 32px;
-    left: 173px;
-    border-radius: 50%;
-    filter: drop-shadow(0 0 .2rem rgb(5, 204, 204));
-    object-fit: cover;
+.about .about-main-skils .about_experience .about__img {
+position: absolute;
+width: 60px;
+height: 60px;
+top: 20px;
+left: 164px;
+border-radius: 50%;
+filter: drop-shadow(0 0 .2rem rgb(5, 204, 204));
+object-fit: cover;
+}
+.about .about-main-skils .about__img_2 {
+ position: absolute;
+ margin-left: 14px;
+width: 60px;
+height: 60px;
+top: 23px;
+border-radius: 50%;
+filter: drop-shadow(0 0 .2rem rgb(5, 204, 204));
+object-fit: cover;
+
 }
 
 
