@@ -304,7 +304,6 @@ line-height: 2;
        object-fit: cover;
 -webkit-filter: drop-shadow(0 0 .2rem var(--color-sp));
 filter: drop-shadow(0 0 .2rem var(--color-sp));
-
 }
 
 
@@ -349,7 +348,7 @@ position: absolute;
 width: 60px;
 margin-top: 1px;
 height: 60px;
-top: 20px;
+top: 35px;
 left: 164px;
 border-radius: 50%;
 filter: drop-shadow(0 0 .2rem rgb(5, 204, 204));
@@ -574,6 +573,7 @@ footer {
     text-decoration: none;
     text-transform: capitalize;
     transition: all .4s;
+    color:none;
 }
 
 .footer_main .footer_about .nav-links li a:hover {
