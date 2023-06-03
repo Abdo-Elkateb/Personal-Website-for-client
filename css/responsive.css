@@ -265,11 +265,10 @@
 
     .header-main .haeder-info p {
         font-size: 14px;
+        margin-top: 40px !important;
         font-weight: 400;
         line-height: 1.7;
         text-align: start;
-
-
     }
 
     .about .about-main p {
