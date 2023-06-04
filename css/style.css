@@ -6,12 +6,16 @@
     --color-sp: #02cfff;
     --color-header: rgb(24, 23, 23);
     --color-address:rgb(71, 69, 69);
-
-
+      --color-hover: var(#000);
 }
-
-.clear {
-    padding-top: 100px;
+body.dark {
+    --body-color: #18191a;
+    --nav-color: #242526;
+    --side-nav: #242526;
+    --text-color: #ccc;
+        --color-sp: #fff;
+    --color-header: #fff;
+        --color-hover:(#e6e6e6);
 }
 
 img {
@@ -21,8 +25,8 @@ img {
 
 .clickUp {
     position: fixed;
-    background: var(--color-sp);
-    color: #eeeeee;
+    background: var(--side-nav);
+      border: 1px solid var(--color-sp);
     width: 60px;
     height: 60px;
     z-index: 9999;
@@ -36,14 +40,10 @@ img {
 }
 
 .clickUp:hover {
-    background: var(--color-address);
-    color:#fff;
+    background: var(--body-color);
+    border: 1px solid var(--color-sp);
 }
 
-.clickUp i {
-    font-size: 30px;
-    margin-top: 20px;
-}
 
 .row {
     padding: 60px 0;
@@ -69,18 +69,8 @@ body {
     scroll-behavior: smooth;
 }
 
-body.dark {
-    --body-color: #18191a;
-    --nav-color: #242526;
-    --side-nav: #242526;
-    ;
-    --text-color: #ccc;
-    --color-sp: #FFF;
-    --color-header: #fff;
 
-
-}
-
+  
 nav {
     position: fixed;
     position: sticky;
@@ -280,7 +270,7 @@ line-height: 2;
     padding: 18px 42px;
     text-transform: uppercase;
     background: #4a4a4b;
-    color: #fff;
+    color: var(--color-hover);
     border: none;
     text-decoration: none;
     font-size: 15px;
@@ -598,3 +588,5 @@ footer {
     height: 30px;
     border-top: 1px solid #50baf363;
 }
+
+/*  end footer */

@@ -69,3 +69,9 @@ clickUp.addEventListener("click", () => {
   })
 })
 
+// 
+
+// ASO // ASO 
+AOS.init({
+    duration:1500
+})
