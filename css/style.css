@@ -1,21 +1,23 @@
 :root {
     --body-color: #fff;
-    --nav-color: #4070f4;
     --side-nav: #010718;
     --text-color: hsl(0, 0%, 100%);
     --color-sp: #02cfff;
     --color-header: rgb(24, 23, 23);
-    --color-address:rgb(71, 69, 69);
-      --color-hover: var(#000);
+    --color-address: rgb(71, 69, 69);
+    --color-hover: #fff;
+    --color-experience: #eeeeee;
 }
+
 body.dark {
     --body-color: #18191a;
     --nav-color: #242526;
-    --side-nav: #242526;
+    --side-nav: #fff;
     --text-color: #ccc;
-        --color-sp: #fff;
+    --color-sp: #fff;
     --color-header: #fff;
-        --color-hover:(#e6e6e6);
+    --color-hover: #02cfff;
+        --color-experience: none;
 }
 
 img {
@@ -28,7 +30,7 @@ img {
 .clickUp {
     position: fixed;
     background: var(--side-nav);
-      border: 1px solid var(--color-sp);
+    border: 1px solid var(--color-sp);
     width: 60px;
     height: 60px;
     z-index: 9999;
@@ -46,10 +48,8 @@ img {
     border: 1px solid var(--color-sp);
 }
 
-
 .row {
     padding: 60px 0;
-
 }
 
 * {
@@ -72,12 +72,11 @@ body {
 }
 
 
-  
 nav {
     position: fixed;
     position: sticky;
     z-index: 999;
-    background-color:var(--color-address);
+    background-color: var(--color-address);
     width: 100%;
     height: 80px;
     top: 0;
@@ -118,23 +117,27 @@ nav .nav-ber .logo {
 
 
 }
+
 .ber_logo {
     display: inline;
     position: relative;
     line-height: 80px;
 }
-.ber_logo img  {
+
+.ber_logo img {
     margin-top: 35px;
 }
-.ber_logo a  {
-color: #fff;
-position: absolute;
-line-height: 80px;
-text-decoration: none;
-top: 7px;
-left: 48px;
-font-size: 18px;
+
+.ber_logo a {
+    color: #fff;
+    position: absolute;
+    line-height: 80px;
+    text-decoration: none;
+    top: 7px;
+    left: 48px;
+    font-size: 18px;
 }
+
 nav .nav-ber .menu .nav-links {
     display: flex;
     align-items: center;
@@ -254,16 +257,16 @@ nav .nav-ber .darklight-x .dark_light {
 }
 
 
-.header-main  p {
-font-size: 16px;
-font-weight: 300;
-margin-bottom:35px !important;
-color: #4a4a4b;
-line-height: 2;
+.header-main p {
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 35px !important;
+    color: var(--side-nav);
+    line-height: 2;
 
 }
-.header-main .secend-p 
-{
+
+.header-main .secend-p {
     padding-bottom: 60px !important;
 }
 
@@ -299,20 +302,16 @@ line-height: 2;
 
 .header-main .header-img img {
 
-       border-radius: 50%;
-       object-fit: cover;
--webkit-filter: drop-shadow(0 0 .2rem var(--color-sp));
-filter: drop-shadow(0 0 .2rem var(--color-sp));
+    border-radius: 50%;
+    object-fit: cover;
+    -webkit-filter: drop-shadow(0 0 .2rem var(--color-sp));
+    filter: drop-shadow(0 0 .2rem var(--color-sp));
 }
 
 
 
 
 /* about */
-.about {
-    /* margin-top: 200px; */
-    /* overflow: hidden; */
-}
 
 .about .about-main {
     margin-top: 40px;
@@ -333,8 +332,8 @@ filter: drop-shadow(0 0 .2rem var(--color-sp));
 
 .about .about-main-skils {
     display: grid;
-    grid-template-columns:1fr 1fr;
-    background: #eeeeee;
+    grid-template-columns: 1fr 1fr;
+    background: var(--color-experience);
     gap: 20px;
     padding: 35px;
     margin-top: 50px;
@@ -343,31 +342,34 @@ filter: drop-shadow(0 0 .2rem var(--color-sp));
 }
 
 .about .about-main-skils .about_experience .about__img {
-position: absolute;
-width: 60px;
-margin-top: 1px;
-height: 60px;
-top: 28px;
-left: 164px;
-border-radius: 50%;
-filter: drop-shadow(0 0 .2rem rgb(5, 204, 204));
-object-fit: cover;
+    position: absolute;
+    width: 60px;
+    margin-top: 1px;
+    height: 60px;
+    top: 28px;
+    left: 164px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 .2rem rgb(5, 204, 204));
+    object-fit: cover;
 }
+
 .about-main-built {
     position: relative;
 }
+
 .about .about-main-skils .about__img_2 {
-position: absolute;
-width: 60px;
-height: 60px;
-top: -10px;
-left: 130px;
-border-radius: 50%;
-filter: drop-shadow(0 0 .2rem rgb(5, 204, 204));
-object-fit: cover;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -10px;
+    left: 130px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 .2rem rgb(5, 204, 204));
+    object-fit: cover;
 
 
 }
+
 .about .about-main h4 {
     font-size: 25px;
     font-weight: 500;
@@ -377,11 +379,13 @@ object-fit: cover;
     color: var(--color-sp);
     height: auto;
 }
+
 .about .about-main p {
-font-size: 15px;
-margin-bottom:20px;
-color: #4a4a4b;
-line-height: 1.7;
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    color:var(--side-nav);
+    line-height: 1.7;
 }
 
 
@@ -403,7 +407,7 @@ line-height: 1.7;
 
 .services i {
     color: var(--color-header);
-    font-size:30px;
+    font-size: 30px;
 }
 
 .services h3 {
@@ -422,7 +426,7 @@ line-height: 1.7;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 40px;
-    color: #4a4a4b;
+    color: var(--side-nav);
 }
 
 .services .services_main {
@@ -471,6 +475,7 @@ line-height: 1.7;
     margin: 0px 10px 0px 10px;
     transition: all .5s ease-in-out;
 }
+
 .services_main_component:hover .services_component_title {
 
     transform: translateY(-100%);
@@ -480,7 +485,7 @@ line-height: 1.7;
 .services_main_component .services_component_title h3 {
     color: var(--text-color);
     font-size: 18px;
-    text-transform:capitalize;
+    text-transform: capitalize;
     font-weight: 600px;
 }
 
@@ -501,8 +506,8 @@ footer {
 .footer_main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap:40px;
-    padding:20px 20px;
+    gap: 40px;
+    padding: 20px 20px;
 }
 
 .footer_logo img {
@@ -520,24 +525,31 @@ footer {
     margin-top: -3px;
     margin-left: 10px
 }
-.footer_main  h6 {
+
+.footer_main h6 {
     font-size: 24px;
     text-transform: uppercase;
     color: var(--text-color);
     text-transform: capitalize;
-    padding:40px 0;
+    padding: 40px 0;
     font-weight: 400;
     border-bottom: 1px solid #50baf363;
 }
-.footer_main  p {
+
+.footer_main p {
     color: var(--text-color);
     font-size: 15px;
     padding: 4px;
 }
-.footer_main p,li,a,i  {
+
+.footer_main p,
+li,
+a,
+i {
 
     margin-top: 8px;
 }
+
 .footer_main .footer_contact_me i {
     color: var(--side-nav);
     font-size: 25px;
@@ -572,7 +584,7 @@ footer {
     text-decoration: none;
     text-transform: capitalize;
     transition: all .4s;
-    color:none;
+    color: none;
 }
 
 .footer_main .footer_about .nav-links li a:hover {
@@ -580,8 +592,9 @@ footer {
 }
 
 .footer_main .lets_contact p {
-    color:var(--color-sp);
+    color: var(--color-sp);
 }
+
 .copy {
     text-align: center;
     color: var(--color-sp);
