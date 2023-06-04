@@ -575,10 +575,9 @@ i {
 .footer_main .footer_about .nav-links li {
     list-style: none;
     padding: 10px;
-
 }
 
-.footer_main .footer_about .nav-links li a {
+.footer_main li a {
     font-size: 16px;
     color: var(--text-color);
     text-decoration: none;
