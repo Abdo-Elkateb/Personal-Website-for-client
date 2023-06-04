@@ -569,6 +569,7 @@ i {
 .footer_main i {
     font-size: 19px;
     color: var(--side-nav);
+      text-decoration: none !important;
 }
 
 
@@ -580,7 +581,7 @@ i {
 .footer_main li a {
     font-size: 16px;
     color: var(--text-color);
-    text-decoration: none;
+    text-decoration: none !important;
     text-transform: capitalize;
     transition: all .4s;
     color: none;
