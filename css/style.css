@@ -23,6 +23,8 @@ img {
     height: 100%;
 }
 
+/* clickUp */
+
 .clickUp {
     position: fixed;
     background: var(--side-nav);
