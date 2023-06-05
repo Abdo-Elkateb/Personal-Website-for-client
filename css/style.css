@@ -17,7 +17,7 @@ body.dark {
     --color-sp: #fff;
     --color-header: #fff;
     --color-hover: #02cfff;
-     --color-experience: #18191a;
+    --color-experience:none;
 }
 
 img {
@@ -167,6 +167,15 @@ nav .nav-ber .menu .nav-links .active-a,
 nav .nav-ber .menu .nav-links li:hover a {
     color: var(--color-sp);
 }
+
+nav .nav-ber .menu .nav-links li:visited a {
+    color: red;
+}
+
+/* 
+nav .nav-ber .menu .nav-links li a:focus  {
+    color: var(--color-sp);
+} */
 
 nav .nav-ber .menu .nav-links li a::after {
     content: "";
@@ -384,7 +393,7 @@ nav .nav-ber .darklight-x .dark_light {
     font-size: 15px;
     font-weight: 200;
     margin-bottom: 20px;
-    color:var(--side-nav);
+    color: var(--side-nav);
     line-height: 1.7;
 }
 
@@ -569,7 +578,7 @@ i {
 .footer_main i {
     font-size: 19px;
     color: var(--side-nav);
-      text-decoration: none !important;
+    text-decoration: none !important;
 }
 
 
