@@ -6,7 +6,7 @@ const body = document.querySelector("body"),
   moodToggle = document.querySelector(".dark_light"),
   sidebarOpen = document.querySelector(".sidebarOpen"),
   sidebarClose = document.querySelector(".sidebarClose");
-
+ 
 let getMode = localStorage.getItem("mode");
 if (getMode && getMode === "dark-mode") {
   body.classList.toggle("dark")
