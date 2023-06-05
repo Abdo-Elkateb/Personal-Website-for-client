@@ -6,7 +6,7 @@
     --color-header: rgb(24, 23, 23);
     --color-navber: rgb(71, 69, 69);
     --color-hover: #fff;
-    --paragraph:rgb(71, 69, 69);
+    --paragraph: rgb(71, 69, 69);
     --background-experience: #eeeeee;
 }
 
@@ -18,7 +18,7 @@ body.dark {
     --color-sp: #fff;
     --color-header: #fff;
     --color-hover: #02cfff;
-        --paragraph:#fff;
+    --paragraph: #fff;
     --background-experience: none;
 }
 
@@ -44,16 +44,18 @@ img {
     text-align: center;
     transition: all .4s;
 }
+
 .clickUp i {
-    color:white;
-margin-top: 10px;
-   font-size: 40px;
+    color: white;
+    margin-top: 10px;
+    font-size: 40px;
 }
 
 .clickUp:hover {
     background: var(--body-color);
     border: 1px solid var(--color-sp);
 }
+
 .clickUp:hover i {
     color: var(--color-sp);
 }
@@ -85,7 +87,7 @@ nav {
     position: fixed;
     position: sticky;
     z-index: 999;
-    background:var(--color-navber);
+    background: var(--color-navber);
     width: 100%;
     height: 80px;
     top: 0;
@@ -175,7 +177,6 @@ nav .nav-ber .menu .nav-links li:hover a {
     color: var(--color-sp);
 }
 
-
 nav .nav-ber .menu .nav-links li a::after {
     content: "";
     position: absolute;
@@ -210,7 +211,6 @@ nav .nav-ber .darklight-x .dark_light {
     font-size: 23px;
     color: var(--text-color);
     cursor: pointer;
-
 }
 
 .dark_light i.sun {
@@ -227,9 +227,9 @@ nav .nav-ber .darklight-x .dark_light {
     opacity: 0;
     pointer-events: none;
 }
+
 /*  header*/
 .header-hoome {
-    /* height: calc(100vh - 80px); */
     width: 100%;
     height: 100%;
 }
@@ -257,14 +257,12 @@ nav .nav-ber .darklight-x .dark_light {
     color: var(--color-sp);
 }
 
-
 .header-main p {
     font-size: 16px;
     font-weight: 200;
     margin-bottom: 35px !important;
     color: var(--paragraph);
     line-height: 2;
-
 }
 
 .header-main .secend-p {
@@ -281,7 +279,6 @@ nav .nav-ber .darklight-x .dark_light {
     text-decoration: none;
     font-size: 15px;
     z-index: 1;
-
 }
 
 .header-main a::after {
@@ -293,30 +290,33 @@ nav .nav-ber .darklight-x .dark_light {
     transition: all .5s cubic-bezier(0.5, 1.6, 0.4, 0.7);
     z-index: -1;
     inset: 0;
-
 }
 
 .header-main a:hover::after {
     width: 100%;
 }
+
 .header-main .header-img img {
     border-radius: 50%;
     object-fit: cover;
     -webkit-filter: drop-shadow(0 0 .2rem var(--color-sp));
     filter: drop-shadow(0 0 .2rem var(--color-sp));
 }
+
 /* about */
 .about .about-main {
-    margin-top:40px;
+    margin-top: 40px;
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 20px;
 }
+
 .about .about-main img {
     height: 260px;
     width: 260px;
     border-radius: 50%;
 }
+
 .about .about-main-skils {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -367,14 +367,13 @@ nav .nav-ber .darklight-x .dark_light {
 
 .about .about-main p {
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 300;
     margin-bottom: 20px;
-    color:var(--paragraph);
+    color: var(--paragraph);
     line-height: 1.7;
 }
 
 /* end about*/
-
 .services {
     margin-bottom: 60px;
 }
@@ -399,8 +398,6 @@ nav .nav-ber .darklight-x .dark_light {
     text-align: center;
     color: var(--color-header);
     margin-bottom: 20px;
-
-
 }
 
 .services p {
@@ -441,13 +438,11 @@ nav .nav-ber .darklight-x .dark_light {
     -o-transition: all 3s;
 }
 
-
 .services .services_main .services_main_component img {
     width: 100%;
     max-height: 50vh;
     object-fit: cover;
     display: block;
-
 }
 
 .services_main_component .services_component_title {
@@ -456,30 +451,26 @@ nav .nav-ber .darklight-x .dark_light {
     transform: translateY(-32px);
     margin: 0px 10px 0px 10px;
     transition: all .5s ease-in-out;
-    color:red;
+    color: red;
 }
 
 .services_main_component:hover .services_component_title {
-
     transform: translateY(-100%);
-
 }
 
 .services_main_component .services_component_title h3 {
     font-size: 18px;
     text-transform: capitalize;
     font-weight: 600px;
-    color:var(--text-color);
+    color: var(--text-color);
 }
 
 .services_main_component .services_component_title p {
     font-weight: 400;
     font-size: 15px;
-       color:var(--text-color);
+    color: var(--text-color);
     line-height: 1.3;
 }
-
-
 
 /* footer */
 footer {
