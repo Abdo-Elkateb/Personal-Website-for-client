@@ -6,7 +6,7 @@ const body = document.querySelector("body"),
   moodToggle = document.querySelector(".dark_light"),
   sidebarOpen = document.querySelector(".sidebarOpen"),
   sidebarClose = document.querySelector(".sidebarClose");
-
+ 
 let getMode = localStorage.getItem("mode");
 if (getMode && getMode === "dark-mode") {
   body.classList.toggle("dark")
@@ -47,19 +47,19 @@ body.addEventListener("click", e => {
 
 let clickUp = document.querySelector(".clickUp");
 
-window.onscroll = function () {
-  if (scrollY < 330) {
+window.onscroll = function() {
+  if(scrollY < 330) {
     clickUp.style.opacity = "0"
-  } else {
-
-    clickUp.style.opacity = "1";
+  }else {
+    
+   clickUp.style.opacity = "1";
   }
 }
 
 clickUp.addEventListener("click", () => {
-  if (scrollY > 100) {
+  if(scrollY > 100) {
     console.log("hi")
-
+    
     // console.log("hi")
   }
 
@@ -73,5 +73,5 @@ clickUp.addEventListener("click", () => {
 
 // ASO // ASO 
 AOS.init({
-  duration: 1500
+    duration:1500
 })
